@@ -10,5 +10,8 @@ public class MainApp {
 
         ExampleBean bean = context.getBean("exampleBeanSetter",ExampleBean.class);
         com.example.constructordi.MainApp.showMessage(bean);
+
+        OutputHelper output = context.getBean("OutputHelper", OutputHelper.class);
+        output.getOutputGenerator().generateOutput();
     }
 }

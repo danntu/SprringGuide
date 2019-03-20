@@ -6,5 +6,8 @@
         <property name="years"><value>1</value></property>
         <property name="ultimateAnswer"><value>answer by Setter</value></property>
     </bean>
-
+    <bean id="OutputHelper" class="com.example.setterdi.OutputHelper">
+    <property name="outputGenerator" ref="CsvOutputGenerator"/>
+    </bean>
+    <bean id="CsvOutputGenerator" class="com.example.setterdi.CsvOutputGenerator"/>
 </beans>
