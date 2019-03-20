@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 public class ModelT1000 implements Robot {
 
 	private Hand hand;
-	private Leg leg;
 	private Head head;
+    private Leg leg;
 
 	@Override
-	public void fire() {
+	public void action() {
 		head.calc();
 		hand.catchSomething();
 		leg.go();

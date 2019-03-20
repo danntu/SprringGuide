@@ -11,5 +11,13 @@ public class Start {
 
         ModelT1000 t1000 = context.getBean("t1000",ModelT1000.class);
         t1000.dance();
+
+        ModelT1000 t1000sony = context.getBean("t1000sony",ModelT1000.class);
+        t1000sony.action();
+
+        System.out.println();
+
+        ModelT1000 t1000toshiba = context.getBean("t1000toshiba",ModelT1000.class);
+        t1000toshiba.action();
     }
 }
